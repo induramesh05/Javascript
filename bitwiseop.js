@@ -3,6 +3,6 @@ function myFunction5() {
 }
 
 function myFunction6() {
-
+    //
     document.getElementById("demo6").innerHTML = 5 | 1;
 }
