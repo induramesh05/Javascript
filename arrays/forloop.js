@@ -13,10 +13,10 @@
 
 function odd() {
 
-    var text;
+    var text = "";
 
     for (let i = 0; i <= 20; i++) {
-        if (i % 2 == 0) {
+        if (i % 2 === 0) {
             text += i + " Is Even" + "<br>";
             document.getElementById("oddeven").innerHTML = text;
 
@@ -40,11 +40,11 @@ function multiplier() {
     // }
 
     var mulnum = 9;
-
+    var result = "";
     for (var i1 = 0; i1 <= 10; i1++) {
         var text1 = i1 * mulnum;
-        var result = mulnum + " * " + i1 + " = " + text1 + "</br>";
-        document.write(result);
+        result += mulnum + " * " + i1 + " = " + text1 + "</br>";
+        // document.write(result);
 
     }
     document.getElementById("multiply").innerHTML = result;
@@ -68,7 +68,7 @@ function displayRecord() {
     values.push(inp2.value);
     values.push(inp3.value);
     values.push(inp4.value);
-    values.push(inp4.value);
+    values.push(inp5.value);
     inp1.value = "";
     inp2.value = "";
     inp3.value = "";
@@ -107,7 +107,7 @@ function displayRecord1() {
     values1.push(inp12.value);
     values1.push(inp13.value);
     values1.push(inp14.value);
-    values1.push(inp14.value);
+    values1.push(inp15.value);
     inp11.value = "";
     inp12.value = "";
     inp13.value = "";
