@@ -1,0 +1,1 @@
+document.getElementById("myParagraph").innerHTML = " This is my inner html paragraph that was inserted.";

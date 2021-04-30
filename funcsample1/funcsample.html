@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+
+<html>
+<title>Indu's Functions webpage</title>
+<link rel="stylesheet" href="D:\JAVASCRIPT\funcsample1\funcsampstyle.css">
+
+<body>
+
+    <div id="sec1">
+
+        <div class="headtext">
+            <h2> My Sample Page For Exercises Using Functions in Javascript</h2>
+        </div>
+    </div>
+    <div class="maincontainer" style="margin-top: 15px;">
+        <div class="headtext1">
+            <h2>THE FORTUNE TELLER</h2>
+            <p>Why pay a fortune teller when you can just program your fortune yourself?
+            </p>
+            <p>Now get ready and enter your details below to have your fortune right on your hands
+            </p>
+
+            <div>
+                <form action="" method="POST" style="text-align: left; margin-left: 250px;">
+
+                    <label for="name"><b>Name: </b></label>
+                    <input type="text" style="margin-left: 138px;" placeholder="Enter name" name="name" id="name" required><br><br>
+                    <label for="job"><b>Job Title: </b></label>
+                    <input type="text" style="margin-left:120px;" placeholder="Enter your job title" name="job" id="job" required><br><br>
+
+                    <label for="location"><b>Geographical location: </b></label>
+                    <input type="text" style="margin-left: 30px;" placeholder="Enter your city" name="location" id="location" required><br><br>
+
+
+                    <label for="partnername"><b>Partner's Name: </b></label>
+                    <input type="text" style="margin-left: 70px;" placeholder="Enter you partner's name" name="partnername" id="partnername" required><br><br>
+
+                    <label for="children"><b>No of Children:</b></label>
+                    <input type="number" style="margin-left: 75px;" placeholder="Enter the no of children" name="children" id="children" required> <br><br>
+
+
+
+                    <div class="clearfix">
+
+                        <button style="float:left;margin-left:250px;" onclick="tellfortune1(document.getElementById('name').value,
+                        document.getElementById('job').value,document.getElementById('location').value,document.getElementById('partnername').value,
+                        document.getElementById('children').value)">Submit</button>
+
+
+                    </div>
+
+
+
+                </form>
+                <!-- <p id="f1"></p> -->
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="maincontainer" style="margin-top: 15px;">
+        <div class="headtext1">
+            <h2>PUPPY AGE CALCULATOR</h2>
+            <p>ou know how old your dog is in human years, but what about dog years? Calculate it!
+            </p>
+            <p>Now get ready and enter your dog's age to know its real dog age.
+            </p>
+
+            <div>
+                <form action="" method="POST" target="_blank" style="text-align: left; margin-left: 250px;">
+
+                    <label for="pupage"><b>Puppy's age in years:</b></label>
+                    <input type="text" style="margin-left: 75px;" placeholder="Enter the puppy's age" name="pupage" id="pupage" required> <br><br>
+
+
+
+                    <div class="clearfix">
+
+
+                        <button style="float:left;margin-left:250px;" formtarget="_blank" onclick="puppyage(document.getElementById('pupage').value)">Submit</button>
+
+
+                    </div>
+
+
+
+                </form>
+                <!-- <button style="margin-top: 20px;" onclick="calculateDogAge()" type="submit">Click here to check your dog's age</button>
+                <p id="f1"></p> -->
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="maincontainer" style="margin-top: 15px;">
+        <div class="headtext1">
+            <h2>LIFE SUPPLY CALCULATOR</h2>
+            <p>Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more! </p>
+            <p>Now get ready and enter your details below: </p>
+
+            <div>
+                <form action="" method="POST" style="text-align: left; margin-left: 250px;">
+
+                    <label for="page"><b>AGE:</b></label>
+                    <input type="text" style="margin-left: 75px;" placeholder="Age" name="page" id="page" required> <br><br>
+
+                    <label for="cage"><b>no of packets:</b></label>
+                    <input type="text" style="margin-left: 75px;" placeholder="Enter the puppy's age" name="cage" id="cage" required> <br><br>
+
+
+
+
+                    <div class="clearfix">
+
+                        <button style="float:left;margin-left:250px;" onclick="lsupply(document.getElementById('page').value,
+                        document.getElementById('cage').value)">Submit</button>
+
+
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="maincontainer" style="margin-top: 15px;">
+        <div class="headtext1">
+            <h2>THE GEOMETRIZER</h2>
+            <p>Have a problem calculating the properties of the circle? </p>
+            <p>Enter the radius and get the result right away</p>
+
+            <div>
+                <form action="" method="POST" style="text-align: left; margin-left: 250px;">
+
+                    <label for="radius"><b>Enter the Radius:</b></label>
+                    <input type="text" style="margin-left: 75px;" placeholder="radius" name="radius" id="radius" required> <br><br>
+
+
+                    <div class="clearfix">
+
+                        <button style="float:left;margin-left:250px;" onclick="circle(document.getElementById('radius').value)">Submit</button>
+
+
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="maincontainer" style="margin-top: 15px;">
+        <div class="headtext1">
+            <h2>The Temperature Converter</h2>
+            <p>Have a problem calculating the properties of the circle? </p>
+            <p>Enter the radius and get the result right away</p>
+
+            <div>
+                <form action="" method="POST" style="text-align: left; margin-left: 250px;">
+
+                    <label for="celcius"><b>Enter the Celcius:</b></label>
+                    <input type="text" style="margin-left: 75px;" placeholder="celcius" name="celcius" id="celcius" required> <br><br>
+
+
+                    <div class="clearfix">
+
+                        <button style="float:left;margin-left:250px;" onclick="celciustof(document.getElementById('celcius').value)">Submit</button>
+                        <br> <br>
+
+                    </div>
+
+
+
+                </form>
+
+                <form action="" method="POST" style="text-align: left; margin-left: 250px; margin-top: 20px;">
+
+                    <label for="faren"><b>Enter the Fahrenheit:</b></label>
+                    <input type="text" style="margin-left: 50px;" placeholder="Fahrenheit" name="faren" id="faren" required> <br><br>
+
+
+                    <div class="clearfix">
+
+                        <button style="float:left;margin-left:250px;" onclick="farentoc(document.getElementById('faren').value)">Submit</button>
+
+
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="D:\JAVASCRIPT\funcsample1\funcsamp.js">
+    </script>
+    <script src="D:\JAVASCRIPT\funcsample1\funcsamp2.js">
+    </script>
+</body>
+
+</html>
+
+
+<!-- problems with passing parameteres inside a function----
+* Submit does not check required fields if getelement by id is used to pass values through submuit button*
+*check for required if just the button is used but unable to pass the values to parameters
+ *console log not working* 
+ * 
+* innerhtml linked to id is not working to give the output in same page -->
