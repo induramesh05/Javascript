@@ -43,7 +43,7 @@ function multiplier() {
     var result = "";
     for (var i1 = 0; i1 <= 10; i1++) {
         var text1 = i1 * mulnum;
-        result += mulnum + " * " + i1 + " = " + text1 + "</br>";
+        result = result + mulnum + " * " + i1 + " = " + text1 + "</br>";
         // document.write(result);
 
     }
@@ -79,13 +79,18 @@ function displayRecord() {
     document.getElementById("par").innerHTML = "The Values you entered are: " + values.join(", ");
 }
 
-function Geeks() {
+function fill() {
     var inputfill = document.getElementById("t1").value;
     var inputpos1 = document.getElementById("pos1").value;
     var inputpos2 = document.getElementById("pos2").value;
-    var result2 = values.fill(inputfill, inputpos1, inputpos2);
 
-    document.getElementById("po").innerHTML = "The newly positioned values are: " + values.join(", ");
+    if (inputpos1 > 3 | inputpos2 > 4) {
+        document.getElementById("Po").innerHTML = "Please enter the right values for the positions"
+    } else {
+        var result2 = values.fill(inputfill, inputpos1, inputpos2);
+
+        document.getElementById("po").innerHTML = "The newly positioned values are: " + values.join(", ");
+    }
 }
 
 
