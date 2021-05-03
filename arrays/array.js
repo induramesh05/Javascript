@@ -29,7 +29,7 @@ function odd() {
     }
 }
 
-//Multiplication tables
+//Multiplication tables function
 
 function multiplier() {
     // var multiplier = 9;
