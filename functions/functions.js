@@ -11,7 +11,7 @@ function tellfortune1(name, job, location, partnername, children) {
         partnername + ' ' + ' with ' + children + ' kids.'
 
 
-    console.log(f);
+    document.write(f);
 
 }
 
